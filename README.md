@@ -32,9 +32,9 @@ The project follows a structured four-step workflow:
 ### 1. Classical Baseline Modeling
 Several classical models are trained under identical conditions to establish a reliable reference:
 
-- XGBoost  
-- Random Forest  
-- Probabilistic linear classifier  
+- XGBoost.
+- Random Forest.
+- Multilager percerption.
 
 All models share the same preprocessing pipeline and a strict train–test split.  
 Evaluation is performed exclusively on the test set using metrics such as Accuracy, AUC-ROC, F1-score, and Gini coefficient.
