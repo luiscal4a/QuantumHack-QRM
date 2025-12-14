@@ -76,15 +76,6 @@ This indicates that quantum embeddings add value primarily in **ambiguous region
 
 ---
 
-## Quantum Training Strategies
-
-### Quantum Refinement
-High-confidence classical predictions are used to validate whether quantum models can reproduce stable patterns using compact quantum representations.
-
-### Quantum Recovery
-Low-confidence and borderline samples are isolated to evaluate whether quantum embeddings can recover structure where classical models are uncertain.
-
----
 
 ## Results Summary
 - Classical models provide strong and reliable baselines
@@ -96,6 +87,19 @@ Low-confidence and borderline samples are isolated to evaluate whether quantum e
 
 ## Future Work
 Further work will focus on refining quantum circuit design and feature encoding, with deeper analysis of low-confidence and borderline credit risk cases. Additional experiments will assess scalability beyond the small-data regime and strengthen confidence-driven hybrid quantum–classical pipelines.
+
+---
+
+## Repository Structure
+
+- [Reduced-credit-risk-prediction.ipynb](Reduced-credit-risk-prediction.ipynb): Includes the example file created by Banco Santander.
+- [Risk_pred_custom.ipynb](Risk_pred_custom.ipynb): Custom notebook created for classical ML tests and confidence analysis.
+- [Get_Least_Confident.ipynb](Get_Least_Confident.ipynb): Notebook created to obtain the data with the least confidence from an XGBoost classification. 
+- [SVM.ipynb](SVM.ipynb): Notebook to test inference on different SVM kernels.
+- **csv files**: Different transformations of the data such as one-hot and ordinal encoding as well as scaling.
+- [quantum_fan_out.ipynb](fan_out/quantum_fan_out.ipynb): Notebook for the data augmentation via quantum embedding.
+- [zz_kernel_scripts](zz_kernel_scripts): Different auxiliary notebooks for comparison between default and quantum-augmented data.
+
 
 ---
 
